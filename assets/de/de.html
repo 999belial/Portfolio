@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" href="../img/portf_icon.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">DEV.PORTFOLIO</div>
+      <li class="lang-switcher">
+        <a href="../../index.html">EN</a>
+        <span>/</span>
+        <a href="de.html" class="active">DE</a>
+      </li>
+      <ul class="nav-links">
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#projects">Projekte</a></li>
+        <li><a href="#skills">Kenntnisse</a></li>
+        <li><a href="#certificates">Zertifikate</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero-container">
+      <div class="hero-content">
+        <h2 class="greeting">Hallo, ich bin</h2>
+        <h1>VLAD</h1>
+        <h2 class="role">Junior Webentwickler</h2>
+        <p class="description">
+          Als Absolvent des Wirtschaftsingenieurwesens habe ich meine
+          Leidenschaft für Webtechnologien und Softwareentwicklung entdeckt. Ich
+          suche aktuell einen Ausbildungsplatz zum Fachinformatiker
+          (Anwendungsentwicklung), um mein analytisches Verständnis gezielt in
+          der Webentwicklung einzusetzen und aktiv an modernen Webprojekten
+          mitzuarbeiten.
+        </p>
+
+        <div class="button-group">
+          <a href="../img/Lebenslauf Kaplii.pdf" target="_blank">
+            <button class="btn-touch">Kontakt aufnehmen →</button>
+          </a>
+          <a href="../img/Lebenslauf Kaplii.pdf" target="_blank">
+            <button class="btn-cv">Lebenslauf herunterladen</button>
+          </a>
+        </div>
+
+        <div class="social-links">
+          <!-- Здесь добавь свои иконки -->
+          <a href="https://github.com/999belial" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+
+          <a href="mailto:kapliivladyslav@gmail.com">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-placeholder">
+          <img src="../img/ich.jpg" alt="VLAD" />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <div class="about-header">
+        <h2>Über mich</h2>
+        <div class="underline"></div>
+      </div>
+
+      <p class="about-text">
+        Als Absolvent des Wirtschaftsingenieurwesens verfüge ich über eine
+        starke analytische Denkweise und eine strukturierte
+        Problemlösungskompetenz. Mein Weg in die IT ist von einer tiefen
+        Leidenschaft für Webtechnologien und dem stetigen Willen zur
+        Weiterentwicklung geprägt. Ich freue mich darauf, mein technisches
+        Verständnis in eine Ausbildung einzubringen und aktiv an innovativen
+        Softwareprojekten mitzuwirken.
+      </p>
+
+      <div class="cards-container">
+        <div class="card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Bildung</h3>
+          <p>
+            Wirtschaftsingenieurwesen-Abschluss mit Schwerpunkt auf
+            Prozessoptimierung und Datenanalyse.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Weg in die IT</h3>
+          <p>
+            Autodidaktischer Entwickler mit praktischer Erfahrung in modernen
+            Webtechnologien.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fas fa-heart"></i>
+          <h3>Leidenschaft</h3>
+          <p>
+            Begeisterung für sauberen Code, nutzerorientiertes Design und
+            kontinuierliche Weiterentwicklung.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects-section">
+      <h2>Projekte</h2>
+      <div class="underline"></div>
+
+      <p class="subtitle">
+        Ausgewählte Projekte, die meine Fähigkeiten in der Webentwicklung
+        widerspiegeln.
+      </p>
+
+      <div class="project-grid">
+        <!-- Card 1 -->
+        <div class="project-card">
+          <div
+            class="project-img"
+            style="background: linear-gradient(135deg, #7b2cbf, #ff66cc)"
+          >
+            <img src="../img/wortkarten.jpg" alt="Wortkarten" />
+          </div>
+
+          <h3>WortKarten</h3>
+          <p>
+            Eine interaktive Flashcard-App zur effizienten
+            Sprachenlernunterstützung. Mit Funktionen für anpassbare
+            Vokabelstapel, Fortschrittsanalyse und einer Lernlogik zur optimalen
+            Merkhilfe.
+          </p>
+          <div class="tech-tags">
+            <span>HTML</span> <span>JavaScript</span>
+            <span>CSS</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/999belial/WortKarten" target="_blank"
+              >Code</a
+            >
+            <a href="https://wort-karten.vercel.app/" target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="project-card">
+          <div
+            class="project-img"
+            style="background: linear-gradient(135deg, #0077b6, #00b4d8)"
+          >
+            <img src="../img/gehaltcheck.jpg" alt="Gehaltcheck" />
+          </div>
+          <h3>GehaltCheck</h3>
+          <p>
+            Ein präziser Gehaltsrechner, speziell auf das deutsche Steuersystem
+            ausgerichtet. Berechnet das Nettoeinkommen unter Berücksichtigung
+            von Sozialversicherungsbeiträgen, Kirchensteuer und individuellen
+            Steuerklassen.
+          </p>
+          <div class="tech-tags">
+            <span>HTML</span> <span>JavaScript</span>
+            <span>CSS</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/999belial/GehaltCheck" target="_blank"
+              >Code</a
+            >
+            <a href="https://gehalt-check.vercel.app/" target="_blank"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="project-card">
+          <div
+            class="project-img"
+            style="background: linear-gradient(135deg, #d90429, #ef476f)"
+          >
+            im Gange
+          </div>
+          <h3>???</h3>
+          <p>???</p>
+          <div class="tech-tags">
+            <span>HTML</span> <span>JavaScript</span>
+            <span>CSS</span>
+          </div>
+          <div class="links">
+            <a href="#">Code</a> <a href="#">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="other-projects" class="other-projects-section">
+      <h2>Weitere IT-Projekte</h2>
+      <div class="underline"></div>
+
+      <div class="other-projects-grid">
+        <!-- Card 1 -->
+        <div class="other-project-card">
+          <img src="../img/game_1.gif" alt="Game 1" class="other-game-gif" />
+          <h3>Puzzlespiel</h3>
+          <p class="engine-tag">Engine: Unity | C#</p>
+          <p>
+            Ein Logik-Puzzlespiel, bei dem man einen Würfel durch knifflige
+            Level zum Ausgang steuert. Entwickelt, um gridbasiertes Movement und
+            Leveldesign zu üben.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="other-project-card">
+          <img src="../img/game_2.gif" alt="Game 2" class="other-game-gif" />
+          <h3>Shooter</h3>
+          <p class="engine-tag">Engine: Unity | C#</p>
+          <p>
+            Ein actionreicher First-Person-Shooter, bei dem der Spieler gegen
+            Zombie-Wellen kämpft. Fokus auf Waffen-Mechaniken,
+            KI-Gegnerverhalten und State Management.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="other-project-card">
+          <img src="../img/game_3.gif" alt="Game 3" class="other-game-gif" />
+          <h3>Wohlfühlspiel</h3>
+          <p class="engine-tag">Engine: Unity | C#</p>
+          <p>
+            Ein entspannendes Atmosphären-Spiel, in dem man als Fotograf eine
+            wunderschöne Waldlandschaft erkundet. Entwickelt für Experimente mit
+            Environment Design, Lichteffekten und einer eigenen
+            Fotomodus-Mechanik.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="ai-generator" class="ai-generator-section">
+      <h2>KI-gestützter Spielideen-Generator</h2>
+      <div class="underline"></div>
+      <p class="section-desc">
+        Brauchst du Inspiration für dein nächstes Unity-Projekt? Lass meinen
+        KI-Assistenten ein einzigartiges Spielkonzept für dich generieren!
+      </p>
+
+      <div class="generator-container">
+        <div class="controls">
+          <label for="genre-select">Genre wählen:</label>
+          <select id="genre-select" class="gen-select">
+            <option value="Action-Spiel">Shooter</option>
+            <option value="Logikrätsel">Logikrätsel</option>
+            <option value="Cozy / Atmosphärisch">Cozy / Atmosphärisch</option>
+            <option value="Düsteres Fantasy-Szenario">Dark Fantasy</option>
+            <option value="Überrasch mich!">Überrasch mich!🎲</option>
+          </select>
+          <button id="generate-btn" class="btn-generate">
+            IDEE GENERIEREN
+          </button>
+        </div>
+
+        <div class="display-box">
+          <div id="idea-output" class="idea-placeholder">
+            Deine nächste Spielidee erscheint hier...
+          </div>
+          <div id="gen-loader" class="loader hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Kenntnisse & Technologien</h2>
+      <div class="underline"></div>
+      <p>Meine technischen Kenntnisse & Tools</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>HTML & CSS</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="icon">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <h3>Backend</h3>
+          <ul>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3>Datenbanken</h3>
+          <ul>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <div class="icon">
+            <i class="fa-solid fa-toolbox"></i>
+          </div>
+          <h3>Tools & Sonstiges</h3>
+          <ul>
+            <li>Git</li>
+            <li>Unity</li>
+            <li>Figma</li>
+            <li>KI-gestützte Entwicklung</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tech-cloud">
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>CSS</span>
+        <span>Node.js</span>
+        <span>PostgreSQL</span>
+        <span>Git</span>
+        <span>Unity</span>
+      </div>
+    </section>
+    <section id="certificates" class="certificates">
+      <h2>Zertifikate</h2>
+      <div class="underline"></div>
+
+      <div class="cert-grid">
+        <!-- Zertifikat 1 -->
+        <div class="cert-card">
+          <img src="../img/it.png" alt="Responsive Webentwicklung" />
+          <h3>Responsive Webentwicklung</h3>
+          <p>freeCodeCamp-Zertifizierung</p>
+          <a
+            href="https://www.freecodecamp.org/certification/vladyslav_kaplii/responsive-web-design-v9"
+            target="_blank"
+            >Zertifikat ansehen</a
+          >
+        </div>
+
+        <!-- Zertifikat 2 -->
+        <div class="cert-card">
+          <img src="../img/english.png" alt="English for Developers" />
+          <h3>A2 Englisch für Entwickler</h3>
+          <p>freeCodeCamp-Zertifizierung</p>
+          <a
+            href="https://www.freecodecamp.org/certification/vladyslav_kaplii/a2-english-for-developers"
+            target="_blank"
+            >Zertifikat ansehen</a
+          >
+        </div>
+
+        <!-- Zertifikat 3 -->
+        <div class="cert-card">
+          <img src="../img/deutsch-b1.jpg" alt="Deutsch B1" />
+          <h3>Deutsch B1(beta)</h3>
+          <p>Sprachzertifikat Deutsch</p>
+          <a href="link-to-certificate" target="_blank">Zertifikat ansehen</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Kontakt</h2>
+      <div class="underline"></div>
+      <p>
+        Ich bin aktuell auf der Suche nach einer Ausbildungsposition. Ich freue
+        mich auf Ihre Nachricht!
+      </p>
+
+      <div class="contact-box">
+        <div class="contact-item">
+          <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+          <div class="text">
+            <h3>Standort</h3>
+            <p>Rheinau, Deutschland</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          <div class="text">
+            <h3>E-mail</h3>
+            <a href="mailto:kapliivladyslav@gmail.com"
+              >kapliivladyslav@gmail.com</a
+            >
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="icon"><i class="fab fa-github"></i></span>
+          <div class="text">
+            <h3>GitHub</h3>
+            <a href="https://github.com/999belial" target="_blank"
+              >View Profile</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2026 Vladyslav Kaplii. Alle Rechte vorbehalten.</p>
+      <div class="footer-links">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+      </div>
+    </footer>
+    <script src="../../script.js"></script>
+  </body>
+</html>

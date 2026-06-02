@@ -1,0 +1,30 @@
+.legal-bg {
+    background-color: #b7b6b6; /* Светлый фон всей страницы */
+    padding: 50px 20px;
+    font-family: sans-serif;
+}
+
+.card-container {
+    background: white; /* Белая карточка */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Легкая тень */
+}
+
+.card-container h1 { color: #1a1a1a; text-align: center; }
+.subtitle { text-align: center; color: #666; margin-bottom: 30px; }
+
+.content-box h2 { font-size: 1.2rem; margin-top: 25px; color: #1a1a1a; }
+.content-box p { color: #444; line-height: 1.6; }
+
+.btn-home {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #0d0d0d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
