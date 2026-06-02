@@ -1,6 +1,6 @@
 export const config = {
   runtime: "edge",
-  regions: ["fra1"], 
+  regions: ["fra1"],
 };
 
 export default async function handler(request) {
@@ -23,17 +23,20 @@ export default async function handler(request) {
   }
 
   let genre = "Random";
+  let lang = "en";
+
   try {
     const body = await request.json();
-    if (body && body.genre) {
-      genre = body.genre;
-    }
+    if (body && body.genre) genre = body.genre;
+    if (body && body.lang) lang = body.lang;
   } catch (e) {}
 
-  const promptText = `Generate a unique, short game idea for Unity. Genre: ${genre}. Include a Title, Core Loop, and a brief description. Do not use markdown stars. Keep it under 300 characters.`;
+  const langInstruction =
+    lang === "de" ? "Antworte bitte auf Deutsch." : "Please answer in English.";
+
+  const promptText = `Generate a unique, short game idea for Unity. Genre: ${genre}. Include a Title, Core Loop, and a brief description. ${langInstruction} Do not use markdown stars. Keep it under 300 characters.`;
 
   try {
-    // Меняем модель в URL на gemini-2.5-flash
     const response = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
       {
